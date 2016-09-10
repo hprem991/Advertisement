@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="Content" table="Content">
+<meta attribute="class-description"> This class contains the Content detail.
+</meta>
+	<id name="id" type="int" column="id">
+		<generator class="native"/> </id>
+	<property name="title" column="TITLE" type="string"/> 
+	<property name="username" column="USERNAME" type="string"/> 
+	<property name="description" column="DESCRIPTION" type="string"/>
+	<property name="discount" column="DISCOUNT" type="int"/> 
+	<property name="picture" column="PICTURE" type="string"/>
+	<property name="startDate" column="START" type="string"/> 
+	<property name="endDate" column="END" type="string"/>
+	<property name="review" column="REVIEW" type="string"/>
+	<property name="flag" column="FLAG" type="boolean"/>\ 
+   </class>
+</hibernate-mapping>
